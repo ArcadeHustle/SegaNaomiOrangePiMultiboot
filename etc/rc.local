@@ -10,5 +10,5 @@ rm /var/lib/misc/dnsmasq.leases
 dnsmasq --interface=eth0 --except-interface=lo -R --dhcp-range=192.168.1.100,192.168.1.102,255.255.255.0,5m --dhcp-option=6,192.168.1.1 --dhcp-option=3,192.168.1.1 --log-dhcp -q -K -d &
 
 #/home/pi/pi0-netboot/uploadbin.sh& 
-/home/pi/pi0-netboot/GPIO_poll.py&
+/home/pi/pi0-netboot/GPIO_poll.py >> /var/log/netboot.log&
 exit 0

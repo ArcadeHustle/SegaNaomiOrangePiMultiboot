@@ -104,39 +104,39 @@ try:
 		state = newstate
 
 	        if ( state1 == False ):
-	                os.system('killall uploadbin.sh; echo 1; /home/pi/pi0-netboot/uploadbin.sh 1&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 1; /home/pi/pi0-netboot/uploadbin.sh 1&')
 	        if ( state2 == False ):
-	                os.system('killall uploadbin.sh; echo 2; /home/pi/pi0-netboot/uploadbin.sh 2&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 2; /home/pi/pi0-netboot/uploadbin.sh 2&')
 	        if ( state3 == False ):
-	                os.system('killall uploadbin.sh; echo 3; /home/pi/pi0-netboot/uploadbin.sh 3&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 3; /home/pi/pi0-netboot/uploadbin.sh 3&')
 	        if ( state4 == False ):
-	                os.system('killall uploadbin.sh; echo 4; /home/pi/pi0-netboot/uploadbin.sh 4&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 4; /home/pi/pi0-netboot/uploadbin.sh 4&')
 	        if ( state5 == False ):
-	                os.system('killall uploadbin.sh; echo 5; /home/pi/pi0-netboot/uploadbin.sh 5&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 5; /home/pi/pi0-netboot/uploadbin.sh 5&')
 	        if ( state6 == False ):
-	                os.system('killall uploadbin.sh; echo 6; /home/pi/pi0-netboot/uploadbin.sh 6&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 6; /home/pi/pi0-netboot/uploadbin.sh 6&')
 	        if ( state7 == False ):
-	                os.system('killall uploadbin.sh; echo 7; /home/pi/pi0-netboot/uploadbin.sh 7&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 7; /home/pi/pi0-netboot/uploadbin.sh 7&')
 	        if ( state8 == False ):
-	                os.system('killall uploadbin.sh; echo 8; /home/pi/pi0-netboot/uploadbin.sh 8&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 8; /home/pi/pi0-netboot/uploadbin.sh 8&')
 	        if ( state9 == False ):
-	                os.system('killall uploadbin.sh; echo 9; /home/pi/pi0-netboot/uploadbin.sh 9&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 9; /home/pi/pi0-netboot/uploadbin.sh 9&')
 	        if ( state10 == False ):
-	                os.system('killall uploadbin.sh; echo 10; /home/pi/pi0-netboot/uploadbin.sh 10&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 10; /home/pi/pi0-netboot/uploadbin.sh 10&')
 	        if ( state11 == False ):
-	                os.system('killall uploadbin.sh; echo 11; /home/pi/pi0-netboot/uploadbin.sh 11&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 11; /home/pi/pi0-netboot/uploadbin.sh 11&')
 	        if ( state12 == False ):
-	                os.system('killall uploadbin.sh; echo 12; /home/pi/pi0-netboot/uploadbin.sh 12&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 12; /home/pi/pi0-netboot/uploadbin.sh 12&')
 	        if ( state13 == False ):
-	                os.system('killall uploadbin.sh; echo 13; /home/pi/pi0-netboot/uploadbin.sh 13&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 13; /home/pi/pi0-netboot/uploadbin.sh 13&')
 	        if ( state14 == False ):
-	                os.system('killall uploadbin.sh; echo 14; /home/pi/pi0-netboot/uploadbin.sh 14&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 14; /home/pi/pi0-netboot/uploadbin.sh 14&')
 	        if ( state15 == False ):
-	                os.system('killall uploadbin.sh; echo 15; /home/pi/pi0-netboot/uploadbin.sh 15&')
+	                os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 15; /home/pi/pi0-netboot/uploadbin.sh 15&')
         	if ( state16 == False ):
-        	        os.system('killall uploadbin.sh; echo 16; /home/pi/pi0-netboot/uploadbin.sh 16&')
+        	        os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 16; /home/pi/pi0-netboot/uploadbin.sh 16&')
         	if ( state17 == False ):
-        	        os.system('killall uploadbin.sh; echo 17; /home/pi/pi0-netboot/uploadbin.sh 17&')
+        	        os.system('killall uploadbin.sh; killall netboot_upload_tool; echo 17; /home/pi/pi0-netboot/uploadbin.sh 17&')
 
 except KeyboardInterrupt:
     print ('Goodbye.')
