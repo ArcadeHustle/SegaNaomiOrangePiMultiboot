@@ -1,0 +1,14 @@
+#!/bin/sh -e
+# rc.local This script is executed at the end of each multiuser
+# runlevel. Make sure that the script will "exit 0" on success or any
+# other value on error. In order to enable or disable this script just
+# change the execution bits. By default this script does nothing.
+#start webserver for naominet.jp
+cd /home/pi/pi0-netboot/; python -m SimpleHTTPServer 80&
+
+rm /var/lib/misc/dnsmasq.leases
+dnsmasq --interface=eth0 --except-interface=lo -R --dhcp-range=192.168.1.100,192.168.1.102,255.255.255.0,5m --dhcp-option=6,192.168.1.1 --dhcp-option=3,192.168.1.1 --log-dhcp -q -K -d &
+
+#/home/pi/pi0-netboot/uploadbin.sh& 
+/home/pi/pi0-netboot/GPIO_poll.py&
+exit 0
